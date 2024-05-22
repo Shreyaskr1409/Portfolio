@@ -1,0 +1,184 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(28, 28, 28); */
+    background-image: url("/assets/images/magicpattern-87PP9Zd7MNo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container1{
+    display: flex;
+    flex-direction: column;
+
+    
+    #navbar{
+        left: 0;
+        position: fixed;
+        display: flex;
+        z-index: 5;
+        padding-bottom: 3px;
+        width: 100%;
+        background-color: bisque;
+        box-shadow: 0 0 8px 1px #0000009f;
+
+        #navbar_inner{
+            position: fixed;
+            z-index: 5;
+            display: flex;
+            /* background-color: #388789; */
+            background-image: url('/assets/images/gradient_navbar.png');
+            background-size: cover;
+            min-height: 50px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 8px 1px #0000009f;
+        }
+
+        #drawer{
+            min-width: 40px;
+            min-height: 40px;
+            background-color: aquamarine;
+            margin: 5px;
+        }
+
+        #leftnav{
+            display: flex;
+            align-items: center;
+        }
+
+        #rightnav{
+            display: flex;
+            align-items: center;
+        }
+
+        #pfp{
+            min-width: 40px;
+            min-height: 40px;
+            background-color: aquamarine;
+            margin: 5px;
+        }
+
+        #websiteName{
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-family: Catchy Mager;
+            font-size: 50px;
+            color: bisque;
+        }
+
+        #navigation{
+            flex-wrap:wrap;
+            max-width: 800px;
+            margin: 0 4px 0 0;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        .nav-but{
+            border-radius: 6px;
+            padding-top: 4px;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 9px 0 9px 10px;
+            font-family: EuroRoman;
+            font-size: 18px;
+            font-stretch: extra-expanded;
+            display: flex;
+            min-width: 90px;
+            height: 20px;
+            background-color: #00000030;
+            color: bisque;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+        }
+
+    }
+}
+
+
+#spacing1{
+    width: 100%;
+    background-color:rgba(250, 235, 215, 0);
+}
+#container2{
+    height: 670px;
+    width: 90%;
+    max-width: 1100px;
+    background-color:rgba(214, 189, 145, 0.679);
+    box-shadow: 0 0 25px #000000c4;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+    #left_box{
+        width: 40%;
+        height: 650px;
+        /* background-color: cadetblue; */
+        background-image: url(/assets/images/pexels-zahide-tas-367420941-19920240.jpg);
+        background-size: cover;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    #division{
+        height: 600px;
+        background-color: black;
+        width: 2px;
+    }
+    #right_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 650px;
+        background-size: cover;
+        margin: 10px;
+        border-radius: 20px;
+        text-wrap: wrap;
+
+        #img_1{
+            background-image: url("/assets/images/magicpattern-87PP9Zd7MNo-unsplash.jpg");
+            background-size: cover;
+            height: 240px;
+            width: 240px;
+            border-radius: 80px;
+            margin-top: 0px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        #text_1{
+            margin: 0;
+            font-family: Raleway;
+            font-weight: 100;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #text_2{
+            margin: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 45px;
+            font-family: Nexa Rust;
+
+            #text_2_small{
+                font-size: 25px;
+            }
+        }
+    }
+}
