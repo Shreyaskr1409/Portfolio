@@ -144,23 +144,130 @@ html, body{
 
 
     #left_box{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
         width: 40%;
         height: 650px;
         background-image: url("assets/images/pexels-zahide-tas-367420941-19920240.jpg");
-        background-size: 110%;
         background-position: center;
         margin: 10px;
         border-radius: 20px;
-        transition-duration: 0.1s;
-        transition-timing-function: ease-out;
-        box-shadow: inset 0 0 50px 10px #000000;
-    }
-    #left_box:hover{
-        background-size: 150%;
         transition-duration: 0.4s;
         transition-timing-function: ease-out;
+
+        #tag_2_cont{
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-self: flex-start;
+            align-items: center;
+            height: 70px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            transform: translateX(0px);
+            transition-duration: 0.6s;
+            transition-timing-function: ease-out;
+        }
+
+
+        background-size: 120%;
+        filter: brightness(1);
         box-shadow: inset 0 0 50px 10px #00000000;
+        .tag_2{
+            z-index: 2;
+            transition-duration: 0.4s;
+            transition-timing-function: linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            padding: 5px;
+
+
+            background-color: #ffe4c400;
+            color: #00000000;
+
+            h3{
+                font-size: 15px;
+                margin: 0;
+                font-family: Raleway;
+            }
+        }
+
+
+
+        #head_1_ques{
+            font-size: 45px;
+            z-index: 2;
+            font-family: Raleway;
+            color: #ffffff;
+            font-weight: 100;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            align-self: flex-start;
+            width: 90%;
+        }
+        #head_1{
+            z-index: 2;
+            margin-top: 0;
+            margin-bottom: 150px;
+            margin-right: 10px;
+            color: #ffffff00;
+            transform: translateX(50px);
+            width: 80%;
+            font-family: Catchy Mager;
+            text-align: right;
+            align-self: flex-end;
+            transition-duration: 0.6s;
+            transition-timing-function: ease-out;
+            transition-delay: 0.2s;
+        }
+        #head_1_txt{
+            margin: 0;
+            font-weight: 100;
+        }
     }
+    #left_box:hover{
+        box-shadow: inset 0 0 50px #000000a3;
+        background-size: 110%;
+        filter: brightness(0.9);
+
+        .tag_2{
+            transition-duration: 0.4s;
+            transition-timing-function: linear;
+
+
+            background-color: #ffe4c4bd;
+            color: #000000;
+        }
+        .tag_2:hover{
+            transition-duration: 0.1s;
+            transition-timing-function: linear;
+            scale: 1.1;
+        }
+        #tag_2_cont{
+            transform: translateX(30px);
+            transition-duration: 0.6s;
+            transition-timing-function: ease-out;
+        }
+        #head_1{
+            color: #ffffff;
+            transform: translateX(0px);
+            transition-delay: 0.2s;
+            transition-duration: 0.6s;
+            transition-timing-function: ease-out;
+        }
+
+        transition-duration: 0.4s;
+        transition-timing-function: ease-out;
+    }
+
+
+
 
 
 
@@ -180,27 +287,13 @@ html, body{
         margin: 10px;
         border-radius: 20px;
         text-wrap: wrap;
-
-        #img_1{
-            background-image: url("assets/images/magicpattern-87PP9Zd7MNo-unsplash.jpg");
-            background-position-x:40%;
-            background-size: cover;
-            min-height: 250px;
-            min-width: 250px;
-            border-radius: 80px;
-            margin-top: 0px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 25px #00000099;
-        }
         .tag_1{
             text-align: center;
             font-family: Catchy Mager;
             font-weight: 900;
             font-size: 15px;
             margin: 0;
-            margin-bottom: 15px;
+            margin-bottom: 0px;
         }
         .my_accounts_container_1{
             display: flex;
@@ -225,37 +318,37 @@ html, body{
             margin: 3px;
             transition: linear 0.15s;
             transition-timing-function: ease-out;
+
+            scale: 0.8;
         }
         .accounts_1:hover{
             transition: linear 0.2s;
             transition-timing-function: ease-out;
-            scale: 1.1;
+            scale: 0.9;
             cursor: pointer;
         }
-        #img_2{
-            background-image: url("assets/images/1000105308-Photoroom.jpg");
-            background-position: center;
-            background-size: 150%;
-            height: 250px;
-            width: 250px;
-            border-radius: 80px;
+
+        #img_1{
+            background-image: url("assets/images/magicpattern-87PP9Zd7MNo-unsplash.jpg");
+            background-position-x:center;
+            background-size: cover;
+            min-height: 200px;
+            min-width: 200px;
+            height: 100%;
+            border-radius: 100px;
             margin-top: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
-            outline-width: 5px;
-            outline-color: rgb(3, 70, 74);
-            outline-style: solid;
-            outline-offset: 5px;
-            animation: color-change 1s infinite;
+            box-shadow: 0 0 25px #00000099;
+            /* transition: linear 0.2s;
+            transition-timing-function: ease-out; */
+        }
+        /* #img_1:hover{
+            background-size: 200%;
             transition: linear 0.2s;
             transition-timing-function: ease-out;
-        }
-        #img_2:hover{
-            background-size: 170%;
-            transition: linear 0.2s;
-            transition-timing-function: ease-out;
-        }
+        } */
         #text_1{
             margin: 0;
             font-family: Catchy Mager;
@@ -266,7 +359,7 @@ html, body{
         }
         #text_2{
             margin: 0;
-            margin-top: 20px;
+            margin-top: 35px;
             margin-bottom: 10px;
             text-align: center;
             font-size: 58px;
@@ -289,6 +382,7 @@ html, body{
         }
         #para_container{
             margin-top: 10px;
+            margin-bottom: 35px;
             width: 70%;
             min-width: 350px;
             display: flex;
