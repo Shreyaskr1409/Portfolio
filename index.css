@@ -114,6 +114,8 @@ html, body{
     width: 100%;
     background-color:rgba(250, 235, 215, 0);
 }
+
+
 #container2{
     height: 670px;
     width: 90%;
@@ -151,34 +153,100 @@ html, body{
 
         #img_1{
             background-image: url("/assets/images/magicpattern-87PP9Zd7MNo-unsplash.jpg");
+            background-position-x:40%;
             background-size: cover;
-            height: 240px;
-            width: 240px;
+            min-height: 250px;
+            min-width: 250px;
             border-radius: 80px;
             margin-top: 0px;
             display: flex;
-            align-items: end;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 25px #00000099;
+        }
+        .tag_1{
+            text-align: center;
+            font-family: Catchy Mager;
+            font-weight: 900;
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        .my_accounts_container_1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
         }
-
+        .accounts_1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("/assets/images/gradient_navbar.png");
+            text-align: center;
+            color: bisque;
+            font-family: RaleWay;
+            font-weight: 100;
+            font-size: 15px;
+            height: 30px;
+            width: 120px;
+            border-radius: 8px;
+        }
+        #img_2{
+            background-image: url("/assets/images/1000105308-Photoroom-Photoroom.png-Photoroom.png");
+            background-size: cover;
+            height: 250px;
+            width: 250px;
+            border-radius: 80px;
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-width: 8px;
+            border-color: rgb(3, 70, 74);
+            border-style: solid;
+        }
         #text_1{
             margin: 0;
-            font-family: Raleway;
+            font-family: Catchy Mager;
             font-weight: 100;
             margin-top: 10px;
             text-align: center;
-            font-size: 20px;
+            font-size: 30px;
         }
         #text_2{
             margin: 0;
+            margin-top: 20px;
             margin-bottom: 10px;
             text-align: center;
-            font-size: 45px;
+            font-size: 50px;
             font-family: Nexa Rust;
 
             #text_2_small{
                 font-size: 25px;
+                color: rgba(0, 0, 0, 0.685);
             }
+        }
+        #para_1{
+            margin: 0;
+            margin-top: 5px;
+            width: 95%;
+            font-family: Raleway;
+            font-weight: 100;
+            font-size: smaller;
+            text-align: center;
+            color:bisque;
+        }
+        #para_container{
+            margin-top: 10px;
+            width: 70%;
+            min-width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(21, 60, 75, 0.758);
+            padding-bottom: 7px;
+            border-radius: 10px;
         }
     }
 }
