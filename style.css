@@ -21,7 +21,7 @@ html, body{
         z-index: 5;
         padding-bottom: 3px;
         width: 100%;
-        background-color: bisque;
+        background-color: #ffe4c4;
         box-shadow: 0 0 8px 1px #0000009f;
 
         #navbar_inner{
@@ -41,7 +41,7 @@ html, body{
         #drawer{
             min-width: 40px;
             min-height: 40px;
-            background-color: aquamarine;
+            background-color: #7fffd4;
             margin: 5px;
         }
 
@@ -58,7 +58,7 @@ html, body{
         #pfp{
             min-width: 40px;
             min-height: 40px;
-            background-color: aquamarine;
+            background-color: #7fffd4;
             margin: 5px;
         }
 
@@ -72,7 +72,7 @@ html, body{
             margin-left: 10px;
             font-family: Catchy Mager;
             font-size: 50px;
-            color: bisque;
+            color: #ffe4c4;
         }
 
         #navigation{
@@ -98,7 +98,7 @@ html, body{
             min-width: 90px;
             height: 20px;
             background-color: #00000030;
-            color: bisque;
+            color: #ffe4c4;
             align-items: center;
             justify-content: center;
             padding-bottom: 5px;
@@ -167,7 +167,7 @@ html, body{
 
     #division{
         height: 600px;
-        background-color: black;
+        background-color: #000000;
         width: 2px;
     }
     #right_box{
@@ -215,7 +215,7 @@ html, body{
             justify-content: center;
             background-image: url("assets/images/gradient_navbar.png");
             text-align: center;
-            color: bisque;
+            color: #ffe4c4;
             font-family: RaleWay;
             font-weight: 100;
             font-size: 15px;
@@ -285,7 +285,7 @@ html, body{
             font-weight: 100;
             font-size: smaller;
             text-align: center;
-            color:bisque;
+            color:#ffe4c4;
         }
         #para_container{
             margin-top: 10px;
