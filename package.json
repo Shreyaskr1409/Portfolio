@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "gsap": "^3.12.5",
-    "vanilla-tilt": "^1.8.1"
-  }
-}
