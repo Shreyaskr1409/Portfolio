@@ -1,0 +1,35 @@
+const projects = document.getElementsByClassName("default")
+// create a map which has key as elementIDs and value as an object with Title and Description
+const projects_info = new Map()
+projects_info.set("Library_App", {
+    pro_title: "Library App",
+    pro_body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ornare nibh. Sed finibus eget ex id laoreet. Aliquam egestas laoreet facilisis. Suspendisse pellentesque, urna sed volutpat ornare, sem dui placerat velit, nec facilisis eros neque quis neque. Nam id mauris vel lacus faucibus suscipit quis vel erat. Proin sed tellus quis mauris imperdiet maximus pulvinar sit amet tortor. Curabitur rhoncus sapien ac lacus ullamcorper cursus. In eu ullamcorper ante, non tempus mauris. Cras aliquam lorem quis odio mollis viverra. Donec eget vulputate nisl, mattis ultricies mauris. Quisque eros lectus, maximus ac malesuada et, hendrerit in lectus. Sed mollis nibh ipsum, non imperdiet erat suscipit a. Donec facilisis laoreet lorem. In volutpat non ante in venenatis. Phasellus in neque mauris.",
+    pro_repo: ""
+})
+projects_info.set("Health_App", {
+    pro_title: "Health App",
+    pro_body: "Quisque vehicula ornare nibh. Sed finibus eget ex id laoreet. Aliquam egestas laoreet facilisis. Suspendisse pellentesque, urna sed volutpat ornare, sem dui placerat velit, nec facilisis eros neque quis neque. Nam id mauris vel lacus faucibus suscipit quis vel erat. Proin sed tellus quis mauris imperdiet maximus pulvinar sit amet tortor. Curabitur rhoncus sapien ac lacus ullamcorper cursus. In eu ullamcorper ante, non tempus mauris. Cras aliquam lorem quis odio mollis viverra. Donec eget vulputate nisl, mattis ultricies mauris. Quisque eros lectus, maximus ac malesuada et, hendrerit in lectus. Sed mollis nibh ipsum, non imperdiet erat suscipit a. Donec facilisis laoreet lorem. In volutpat non ante in venenatis. Phasellus in neque mauris.",
+    pro_repo: ""
+})
+
+for (const project of projects) {
+    project.addEventListener('click', (event) => {
+        const clickedProject = event.target
+        const elementID = clickedProject.getAttribute("id")
+        
+        try {
+            document.getElementById("img_p")
+                .setAttribute(
+                    "src",
+                    clickedProject.getAttribute("src")
+                )
+
+            document.getElementById("title_p1")
+                .innerText = projects_info.get(elementID).pro_title
+            document.getElementById("body_p1")
+                .innerText = projects_info.get(elementID).pro_body
+        } catch (e) {
+            console.log("I couldn't set content for the card")
+        }
+    })
+}

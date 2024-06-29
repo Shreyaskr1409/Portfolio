@@ -13,7 +13,9 @@ body {
         padding: 0;
     }
 }
-
+*{
+    box-sizing: border-box;
+}
 #container1 {
     z-index: 10;
     display: flex;
@@ -102,7 +104,7 @@ body {
             font-stretch: extra-expanded;
             display: flex;
             min-width: 90px;
-            height: 16px;
+            height: 25px;
             background-color: #00000030;
             color: #ffe4c4;
             align-items: center;
@@ -119,10 +121,12 @@ body {
     }
 }
 
-
 #spacing1 {
     width: 100%;
 }
+
+
+
 
 #section1 {
     margin-top: 0;
@@ -499,11 +503,11 @@ body {
     #back_to_top {
         z-index: 4;
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        background-color: #6f6f6f;
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #a4a4a4;
         border: none;
         border-radius: 50%;
         font-size: 24px;
@@ -522,7 +526,7 @@ body {
 
     #back_to_top:hover {
         transition: 0.3s ease-out;
-        background-color: #9c9c9c;
+        background-color: #d3d3d3;
     }
 
     #back_to_top.show {
@@ -550,8 +554,69 @@ body {
         color: transparent;
     }
 
+    .my_projects_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .card_p{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
 
+            #img_p{
+                width: 40vw;
+                height: 24vw;
+                margin: 20px;
+                object-fit: cover;
+            }
+            #text_p{
+                width: 30vw;
+                height: 24vw;
+                margin: 20px;
+                font-family: Raleway;
+                color: #ffe4c4;
 
+                #title_p{
+                    font-size: 35px;
+                }
+                #body_p{
+                    font-size: 16px;
+                    font-family: Open Sans;
+                }
+                #button_p{
+                    margin: 30px 0px 0 0px;
+                    font-size: 24px;
+                    padding: 5px 20px;
+                    background: #184644;
+                    width: min-content;
+                    border-radius: 8px;
+                    scale: 1;
+                    transition: linear 100ms;
+                }
+                #button_p:hover {
+                    scale: 1.1;
+                    transition: linear 100ms;
+                }
+            }
+        }
+    }
+
+    #Click_to_explore {
+        font-size: 4vw;
+        margin: 0;
+        margin-left: 5%;
+        padding-left: 10px;
+        width: fit-content;
+        font-family: Catchy Mager;
+        background: linear-gradient(to right, #ffe4c4, #b07225);
+        background-clip: text;
+        color: transparent;
+    }
 
     .my_projects_section {
         width: 100%;
@@ -560,8 +625,6 @@ body {
         justify-content: center;
         position: relative;
         padding: 20px 0;
-
-
 
         .card-slider {
             overflow: hidden;
@@ -635,6 +698,7 @@ body {
             }
 
             .project_name {
+                margin: 0;
                 text-align: center;
                 text-align: left;
                 font-size: 25px;
@@ -651,12 +715,12 @@ body {
                 left: 0;
                 width: 100%;
                 height: fit-content;
-                padding: 8px 0 8px 0;
+                padding: 8px 10px 8px 10px;
                 background: rgba(0, 0, 0, 0.5);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 opacity: 0;
                 transition: opacity 0.3s ease-in-out;
             }
@@ -669,7 +733,7 @@ body {
 
         }
 
-        .card:hover {
+        .card:hover, .card:active {
             transition: 0.3s ease-out;
             filter: brightness(1);
 
@@ -705,6 +769,5 @@ body {
             color: #FFD7D4;
         }
     }
-
 
 }

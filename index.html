@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="assets/fonts/Nexa Rust/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Raleway/stylesheet.css">
     <link rel="fonts" href="assets\fonts\EuroRoman\eurro___.ttf">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <body>
 
 
-
+<!--    Loading page    -->
     <h1 class="counter" id="count1">Loading...</h1>
     <h1 class="counter" id="count2">0</h1>
   
@@ -31,7 +35,6 @@
       <div class="bar"></div>
     </div>
 
-
     <button id="back_to_top">
         <img src="assets/icons/angle-small-up.png" alt="">
     </button>
@@ -40,9 +43,8 @@
   
   
   
-  
-  
 
+<!--    Navbar and spacing for it   -->
     <div id="container1">
         <div id="navbar">
             <div id="navbar_inner">
@@ -54,10 +56,10 @@
                 </div>
                 <div id="rightnav">
                     <div id="navigation">
-                        <div class="nav-but">Qwertyu</div>
-                        <div class="nav-but">Qwertyu</div>
-                        <div class="nav-but">Qwertyu</div>
-                        <div class="nav-but">Qwertyu</div>
+                        <div class="nav-but" id="projects_nav">Projects</div>
+                        <div class="nav-but" id="resume_nav">Resume</div>
+                        <div class="nav-but" id="contact_nav">Contact</div>
+                        <div class="nav-but" id="about_nav">About</div>
                     </div>
                     <div id="pfp"></div>
                 </div>
@@ -67,6 +69,7 @@
     <div id="spacing1"></div>
 
 
+<!--  Front page first section  -->
     <div id="section1">
         <div id="container2">
             <div id="left_box">
@@ -96,7 +99,7 @@
 
                 <div id="container_img" style="display: flex; align-items: center; justify-content:space-evenly; width: 100%; margin-top: 20px; margin-bottom: 10px; flex-grow: 1;">
                     <div class="my_accounts_container_1">
-                        <h3 class="tag_1"">ANDROID DEVELOPER</h3>
+                        <h3 class="tag_1">ANDROID DEVELOPER</h3>
                         <div class="accounts_1"><h5 style="margin: 0px;">MY GITHUB</h5></div>
                     </div>
                     <div id="img_1" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
@@ -120,111 +123,47 @@
     </div>
 
 
+<!--    Display of my Projects  -->
     <div id="my_projects">
         <div id="my_projects_title"><h1>MY PROJECTS</h1></div>
 
+        <div class="my_projects_container">
+            <div class="card_p">
+                <img id="img_p" src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" alt="Project Image">
+                <div id="text_p">
+                    <div id="title_p">
+                        <h1 id="title_p1">Library App</h1>
+                    </div>
+                    <div id="body_p">
+                        <p id="body_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ornare nibh. Sed finibus eget ex id laoreet. Aliquam egestas laoreet facilisis. Suspendisse pellentesque, urna sed volutpat ornare, sem dui placerat velit, nec facilisis eros neque quis neque. Nam id mauris vel lacus faucibus suscipit quis vel erat. Proin sed tellus quis mauris imperdiet maximus pulvinar sit amet tortor. Curabitur rhoncus sapien ac lacus ullamcorper cursus. In eu ullamcorper ante, non tempus mauris. Cras aliquam lorem quis odio mollis viverra. Donec eget vulputate nisl, mattis ultricies mauris. Quisque eros lectus, maximus ac malesuada et, hendrerit in lectus. Sed mollis nibh ipsum, non imperdiet erat suscipit a. Donec facilisis laoreet lorem. In volutpat non ante in venenatis. Phasellus in neque mauris.</p>
+                    </div>
+                    <div id="button_p">Repository</div>
+                </div>
+            </div>
+        </div>
 
+        <h1 id="Click_to_explore">Click to explore:</h1>
 
         <div class="my_projects_section">
             <div class="card-slider">
                 <div class="cards">
                     <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
+                        <div class="circle" onclick="window.open('https://www.google.com', '_blank');"></div>
+                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default" id="Library_App">
                         <div class="hover">
                             <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
+                                <h2>Library App</h2>
+                                <p>Collaboration</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
+                        <div class="circle" onclick="window.open('https://www.google.com', '_blank');"></div>
+                        <img src="assets/images/pexels-zahide-tas-367420941-19920240.jpg" class="default" id="Health_App">
                         <div class="hover">
                             <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="redirect()"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Project Name</h2>
-                                <p>Description</p>
+                                <h2>Health App</h2>
+                                <p>Collaboration</p>
                             </div>
                         </div>
                     </div>
@@ -236,9 +175,9 @@
     </div>
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="index.js"></script>
+    <script src="projects_content.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.js" integrity="sha512-0eckjEcIDNlyXFNRAL2Kecw71G5Df+nI2kazjvQrH/DZEHYOdy0UnP0gAlQGZMq4ZOOHpc2eYG15N3JZDA6pGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
