@@ -69,6 +69,7 @@ addEventListener("resize", () => {
 
 function startLoader() {
   let counterElement = document.querySelector("#count2");
+  let loadingElement = document.querySelector("#count1");
   let currentValue = 0;
 
   function updateCounter() {
@@ -87,6 +88,7 @@ function startLoader() {
         delay: 1,
         height: 0,
       });
+      loadingElement.innerHTML = ""
       return;
     }
     currentValue += Math.floor(Math.random() * 20) + 1;

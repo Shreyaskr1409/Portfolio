@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="assets/fonts/Catchy Mager/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/EuroRoman/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Nexa Rust/stylesheet.css">
@@ -100,13 +101,13 @@
                 <div id="container_img" style="display: flex; align-items: center; justify-content:space-evenly; width: 100%; margin-top: 20px; margin-bottom: 10px; flex-grow: 1;">
                     <div class="my_accounts_container_1">
                         <h3 class="tag_1">ANDROID DEVELOPER</h3>
-                        <div class="accounts_1"><h5 style="margin: 0px;">MY GITHUB</h5></div>
+                        <div class="accounts_1"><h5 style="margin: 0px;" onclick="window.open('https://github.com/Shreyaskr1409', '_blank')">MY GITHUB</h5></div>
                     </div>
                     <div id="img_1" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
                     </div>
                     <div class="my_accounts_container_1">
                         <h3 class="tag_1">WEB DEVELOPER</h3>
-                        <div class="accounts_1"><h5 style="margin: 0px;">MY LINKEDIN</h5></div>
+                        <div class="accounts_1"><h5 style="margin: 0px;" onclick="window.open('https://www.linkedin.com/in/shreyas-kumar-164482298/', '_blank')">MY LINKEDIN</h5></div>
                     </div>
                 </div>
 
@@ -129,13 +130,13 @@
 
         <div class="my_projects_container">
             <div class="card_p">
-                <img id="img_p" src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" alt="Project Image">
+                <img id="img_p" src="assets/images/e8974459aab96bc0ae41dad52bc017e1.jpg" alt="Project Image">
                 <div id="text_p">
                     <div id="title_p">
-                        <h1 id="title_p1">Library App</h1>
+                        <h1 id="title_p1">Simpliblog</h1>
                     </div>
                     <div id="body_p">
-                        <p id="body_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula ornare nibh. Sed finibus eget ex id laoreet. Aliquam egestas laoreet facilisis. Suspendisse pellentesque, urna sed volutpat ornare, sem dui placerat velit, nec facilisis eros neque quis neque. Nam id mauris vel lacus faucibus suscipit quis vel erat. Proin sed tellus quis mauris imperdiet maximus pulvinar sit amet tortor. Curabitur rhoncus sapien ac lacus ullamcorper cursus. In eu ullamcorper ante, non tempus mauris. Cras aliquam lorem quis odio mollis viverra. Donec eget vulputate nisl, mattis ultricies mauris. Quisque eros lectus, maximus ac malesuada et, hendrerit in lectus. Sed mollis nibh ipsum, non imperdiet erat suscipit a. Donec facilisis laoreet lorem. In volutpat non ante in venenatis. Phasellus in neque mauris.</p>
+                        <p id="body_p1">Encouraging peers to learn from each other via blogs centered around an institute environment.</br></br>This reposotory is a personal project of mine but I also want this to work out in the grand scheme of things as I really think blog-based learning is lacking in university students and learners in India. Blogs bring out the reality of working in an industry.</p>
                     </div>
                     <div id="button_p">Repository</div>
                 </div>
@@ -148,7 +149,17 @@
             <div class="card-slider">
                 <div class="cards">
                     <div class="card">
-                        <div class="circle" onclick="window.open('https://www.google.com', '_blank');"></div>
+                        <div class="circle" onclick="window.open('https://github.com/Shreyaskr1409/SimpliBlog', '_blank');"></div>
+                        <img src="assets/images/e8974459aab96bc0ae41dad52bc017e1.jpg" class="default" id="Simpliblog">
+                        <div class="hover">
+                            <div class="project_name">
+                                <h2>Simpliblog</h2>
+                                <p>Personal Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="circle" onclick="window.open('https://github.com/Shreyaskr1409/My_Library', '_blank');"></div>
                         <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default" id="Library_App">
                         <div class="hover">
                             <div class="project_name">
@@ -158,7 +169,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="circle" onclick="window.open('https://www.google.com', '_blank');"></div>
+                        <div class="circle" onclick="window.open('https://github.com/shauryasawai/Health-app', '_blank');"></div>
                         <img src="assets/images/pexels-zahide-tas-367420941-19920240.jpg" class="default" id="Health_App">
                         <div class="hover">
                             <div class="project_name">
@@ -171,6 +182,21 @@
             </div>
             <span class="left-arrow_2">&laquo;</span>
             <span class="right-arrow_2">&raquo;</span>
+        </div>
+    </div>
+
+
+    <!-- Resume Section -->
+    <!-- To be added -->
+
+    <!-- About me section -->
+    <div id="am_container">
+        <div id="am_inner_container">
+            <section class="mapbox" data-mapbox>
+              <figure>
+                <iframe id="map_raipur" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118983.72840229067!2d81.61907330000001!3d21.26190555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1722771727215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </figure>
+            </section>
         </div>
     </div>
 
