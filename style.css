@@ -564,6 +564,7 @@ body {
         background-clip: text;
         color: transparent;
         z-index: 5;
+        position: relative;
     }
 
     .my_projects_container {
@@ -625,7 +626,7 @@ body {
         position: absolute;
         height: 500px;
         width: 100%;
-        background-image: url('assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg');
+        background-image: url('./assets/images/e8974459aab96bc0ae41dad52bc017e1.jpg');
         background-size: cover;
         background-position: center;
         filter: blur(5px) brightness(50%);
@@ -642,6 +643,8 @@ body {
         background: linear-gradient(to right, #ffe4c4, #b07225);
         background-clip: text;
         color: transparent;
+        position: relative;
+        z-index: 5;
     }
 
     .my_projects_section {
