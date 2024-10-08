@@ -625,7 +625,7 @@ body {
         position: absolute;
         height: 500px;
         width: 100%;
-        background-image: url('/assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg');
+        background-image: url('assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg');
         background-size: cover;
         background-position: center;
         filter: blur(5px) brightness(50%);
