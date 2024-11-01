@@ -1,6 +1,2 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import
+url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');

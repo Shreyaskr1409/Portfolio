@@ -1,6 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: 'EuroRoman';
     src: url('eurr____.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
+
+@import url(https://db.onlinewebfonts.com/c/7be291f06a538e7e0226d05c2dd3dab6?family=EuroRoman);

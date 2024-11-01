@@ -1,6 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: 'Nexa Rust';
     src: url('NexaRustSlab-BlackShadow01.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
+} */
+
+@import url('https://fonts.cdnfonts.com/css/nexa-rust-extras');
