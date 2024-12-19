@@ -109,45 +109,6 @@ startLoader();
 //////////////////////////////////////
 //////////////////////////////////////
 //////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////// ARROWS FOR PROJECTS /////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-
-const leftArrow_2 = document.querySelector(".left-arrow_2");
-const rightArrow_2 = document.querySelector(".right-arrow_2");
-const cards = document.querySelector(".cards");
-
-let currentIndex = 0;
-
-leftArrow_2.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCardPosition();
-  }
-});
-
-rightArrow_2.addEventListener("click", () => {
-  if (currentIndex < cards.children.length - 4) {
-    currentIndex++;
-    updateCardPosition();
-  }
-});
-
-function updateCardPosition() {
-  const cardWidth = cards.children[0].getBoundingClientRect().width;
-  cards.style.transform = `translateX(${-currentIndex * (cardWidth + 20)}px)`;
-}
-
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
 ////////// SCROLL ON LOAD /////////////
 //////////////////////////////////////
 //////////////////////////////////////
@@ -170,7 +131,7 @@ window.addEventListener("load", function () {
 document
     .getElementById("projects_button_tag_2")
     .addEventListener("click", function () {
-      document.getElementById("my_projects").scrollIntoView({
+      document.getElementById("projects_title").scrollIntoView({
         behavior: "smooth",
       });
     });
@@ -178,7 +139,7 @@ document
 document
     .getElementById("projects_nav")
     .addEventListener("click", function () {
-      document.getElementById("my_projects").scrollIntoView({
+      document.getElementById("projects_title").scrollIntoView({
         behavior: "smooth",
       });
     });

@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="projects_style.css">
     <link rel="stylesheet" href="assets/fonts/Nexa Rust/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Catchy Mager/stylesheet.css">
-    <link rel="stylesheet" href="assets/fonts/EuroRoman/stylesheet.css">
     <link rel="stylesheet" href="assets/fonts/Raleway/stylesheet.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -58,10 +57,10 @@
                 </div>
                 <div id="rightnav">
                     <div id="navigation">
-                        <div class="nav-but" id="projects_nav">Projects</div>
-                        <div class="nav-but" id="resume_nav">Resume</div>
-                        <div class="nav-but" id="contact_nav">Contact</div>
-                        <div class="nav-but" id="about_nav">About</div>
+                        <div class="nav-but" id="projects_nav">PROJECTS</div>
+                        <div class="nav-but" id="resume_nav">RESUME</div>
+                        <div class="nav-but" id="contact_nav">CONTACT</div>
+                        <div class="nav-but" id="about_nav">ABOUT</div>
                     </div>
                     <div id="pfp"></div>
                 </div>
@@ -117,86 +116,81 @@
                 <div id="para_container">
                     <h4 id="para_1">I am aiming to become a Software Developer Engineer while studying at NIT Rourkela, persuing B.Tech in Electronics and Communication Engineering.</h4>
                 </div>
-
-
-                <!-- <div id="spacing3" style="flex-grow: 1;"></div> -->
             </div>
         </div>
     </div>
 
-
-<!--    Display of my Projects  -->
-    <div id="my_projects">
-        <div id="my_projects_title"><h1>MY PROJECTS</h1></div>
-
-        <div class="my_projects_container">
-            <div class="card_p">
-                <img id="img_p" src="assets/images/Screenshot 2024-10-09 001038-min.png" alt="Project Image">
-                <div id="text_p">
-                    <div id="title_p">
-                        <h1 id="title_p1">Simpliblog</h1>
+    <div class="projects_container">
+        <h1 id="projects_title">MY PROJECTS</h1>
+        <div class="projects_container_2">
+            <div class="projects_left">
+                <div class="projects_left_container">
+                    <h1 id="github_title">Github account:</h1>
+                    <h1 id="github_username" onclick="window.open('https://github.com/Shreyaskr1409', '_blank')">@Shreyaskr1409</h1>
+                    <div class="projects_social">
+                        <img src="./assets/icons/icons8-link-50.png" alt="">
+                        <a class="projects_social_url" href="">SimpliBlog</a>
                     </div>
-                    <div id="body_p">
-                        <p id="body_p1">Encouraging peers to learn from each other via blogs centered around an institute environment.</br></br>This reposotory is a personal project of mine but I also want this to work out in the grand scheme of things as I really think blog-based learning is lacking in university students and learners in India. Blogs bring out the reality of working in an industry.</p>
+                    <div class="projects_social">
+                        <img src="./assets/icons/icons8-link-50.png" alt="">
+                        <a class="projects_social_url" href="">Grade Insight</a>
                     </div>
-                    <div id="button_p" onclick="window.open('https://github.com/Shreyaskr1409/SimpliBlog', '_blank');">Repository</div>
-                </div>
-            </div>
-
-
-        <div class="my_projects_section">
-            <div class="card-slider">
-                <div class="cards">
-                    <div class="card">
-                        <div class="circle" onclick="window.open('https://github.com/Shreyaskr1409/SimpliBlog', '_blank');"></div>
-                        <img src="assets/images/e8974459aab96bc0ae41dad52bc017e1.jpg" class="default" id="Simpliblog">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Simpliblog</h2>
-                                <p>Personal Project</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="window.open('https://github.com/Shreyaskr1409/My_Library', '_blank');"></div>
-                        <img src="assets/images/karsten-wurth-UbGYPMbMYP8-unsplash.jpg" class="default" id="Library_App">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Library App</h2>
-                                <p>Collaboration</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="circle" onclick="window.open('https://github.com/shauryasawai/Health-app', '_blank');"></div>
-                        <img src="assets/images/pexels-zahide-tas-367420941-19920240.jpg" class="default" id="Health_App">
-                        <div class="hover">
-                            <div class="project_name">
-                                <h2>Health App</h2>
-                                <p>Collaboration</p>
-                            </div>
-                        </div>
+                    <div class="projects_social">
+                        <img src="./assets/icons/icons8-link-50.png" alt="">
+                        <a class="projects_social_url" href="">NESemu</a>
                     </div>
                 </div>
             </div>
-            <span class="left-arrow_2">&laquo;</span>
-            <span class="right-arrow_2">&raquo;</span>
-        </div>
-        </div>
-    </div>
-
-
-    <!-- Resume Section -->
-    <!-- To be added -->
-
-    <!-- About me section -->
-    <div id="am_container">
-        <div id="am_inner_container">
-            <section class="mapbox" data-mapbox>
-            <figure id="map_figure">
-                <iframe id="map_raipur" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118983.72840229067!2d81.61907330000001!3d21.26190555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1722771727215!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </figure>
-            </section>
+            <div class="projects_right">
+                <div class="projects_card">
+                    <img src="./assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg" alt="">
+                    <div class="projects_info">
+                        <h1>SimpliBlog</h1>
+                        <p>A Networking and Blogging website</p>
+                        <div class="lang_used">
+                            <h4>Golang</h4>
+                            <h4>Javascript</h4>
+                            <h4>Svelte</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects_card">
+                    <img src="./assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg" alt="">
+                    <div class="projects_info">
+                        <h1>SimpliBlog</h1>
+                        <p>A Networking and Blogging website</p>
+                        <div class="lang_used">
+                            <h4>Golang</h4>
+                            <h4>Javascript</h4>
+                            <h4>Svelte</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects_card">
+                    <img src="./assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg" alt="">
+                    <div class="projects_info">
+                        <h1>SimpliBlog</h1>
+                        <p>A Networking and Blogging website</p>
+                        <div class="lang_used">
+                            <h4>Golang</h4>
+                            <h4>Javascript</h4>
+                            <h4>Svelte</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects_card">
+                    <img src="./assets/images/e8974459aab96bc0ae41dad52bc017e1-min.jpg" alt="">
+                    <div class="projects_info">
+                        <h1>SimpliBlog</h1>
+                        <p>A Networking and Blogging website</p>
+                        <div class="lang_used">
+                            <h4>Golang</h4>
+                            <h4>Javascript</h4>
+                            <h4>Svelte</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
