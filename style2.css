@@ -1,18 +1,18 @@
 #am_container {
     z-index: 0;
     width: 100%;
-    height: 150vh;
-    background-image: url("/assets/images/e8974459aab96bc0ae41dad52bc017e1.jpg");
+    height: 500px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0px;
 
     #am_inner_container{
         z-index: 1;
-        height: 120vh;
-        width: 70vw;
+        height: 100%;
+        width: 90%;
         background-color: #00000063;
         border-radius: 20px;
         backdrop-filter: blur(20px);
@@ -22,11 +22,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
-        width: 70vw;
+        height: 100%;
+        width: 100%;
     }
     #map_raipur {
-        height: 70vh;
-        width: 60vw;
+        height: 100%;
+        width: 100%;
+    }
+    #map_figure {
+        height: 100%;
+        width: 100%;
     }
 }
